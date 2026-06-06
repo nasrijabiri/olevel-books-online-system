@@ -1,0 +1,66 @@
+-- This script populates the database with Tanzanian O-Level curriculum subjects and textbooks (Form 1 - Form 4)
+USE olevel_books_db;
+INSERT INTO categories (category_id, category_name) VALUES
+(1, 'Mathematics'),
+(2, 'Kiswahili'),
+(3, 'English Language'),
+(4, 'Geography'),
+(5, 'Chemistry'),
+(6, 'Biology'),
+(7, 'Civics'),
+(8, 'Physics'),
+(9, 'History');
+INSERT INTO books (category_id, title, author, description, price, stock_quantity) VALUES
+-- Mathematics (Category 1)
+(1, 'Secondary Mathematics Book One', 'TIE', 'Core Mathematics textbook for Form One students in Tanzania.', 12000.00, 50),
+(1, 'Secondary Mathematics Book Two', 'TIE', 'Core Mathematics textbook for Form Two students.', 13000.00, 45),
+(1, 'Secondary Mathematics Book Three', 'TIE', 'Advanced core math principles for Form Three topics.', 14000.00, 40),
+(1, 'Secondary Mathematics Book Four', 'TIE', 'Final preparation math textbook for National Form Four Examinations.', 15000.00, 60),
+
+-- Kiswahili (Category 2)
+(2, 'Kiswahili Kidato cha Kwanza', 'TIE', 'Kitabu cha wanafunzi wa Kidato cha Kwanza kujifunza lugha na fasihi.', 10000.00, 70),
+(2, 'Kiswahili Kidato cha Pili', 'TIE', 'Kinafundisha sarufi na uchambuzi wa vitabu vya Kidato cha Pili.', 11000.00, 65),
+(2, 'Kiswahili Kidato cha Tatu', 'TIE', 'Uandishi na uchambuzi wa kina wa ushairi na tamthilia.', 12000.00, 55),
+(2, 'Kiswahili Kidato cha Nne', 'TIE', 'Maandalizi ya mtihani wa Taifa wa Kiswahili (CSEE).', 13000.00, 80),
+
+-- English Language (Category 3)
+(3, 'English for Secondary Schools Book 1', 'TIE', 'Foundation language skills, grammar, and reading for Form 1.', 11500.00, 50),
+(3, 'English for Secondary Schools Book 2', 'TIE', 'Intermediate grammar rules and structural writing layout for Form 2.', 12500.00, 50),
+(3, 'English for Secondary Schools Book 3', 'TIE', 'Literature texts analysis and creative composition structure for Form 3.', 13500.00, 45),
+(3, 'English for Secondary Schools Book 4', 'TIE', 'Advanced comprehension and language exam drill for Form 4.', 14500.00, 75),
+
+-- Geography (Category 4)
+(4, 'Geography for Secondary Schools Book 1', 'TIE', 'Introduction to physical geography and map reading skills.', 12000.00, 40),
+(4, 'Geography for Secondary Schools Book 2', 'TIE', 'Human and economic geography concepts across East Africa.', 13000.00, 40),
+(4, 'Geography for Secondary Schools Book 3', 'TIE', 'Statistical data representation and research methods in geography.', 14000.00, 35),
+(4, 'Geography for Secondary Schools Book 4', 'TIE', 'Environmental management and global focus topics for Form 4.', 15000.00, 50),
+
+-- Chemistry (Category 5)
+(5, 'Chemistry for Secondary Schools Book 1', 'TIE', 'Introduction to chemistry, laboratory apparatus, and safety rules.', 13500.00, 40),
+(5, 'Chemistry for Secondary Schools Book 2', 'TIE', 'Atomic structure, chemical bonding, and formula weights.', 14000.00, 35),
+(5, 'Chemistry for Secondary Schools Book 3', 'TIE', 'Volumetric analysis, chemical kinetics, and energetics.', 15000.00, 30),
+(5, 'Chemistry for Secondary Schools Book 4', 'TIE', 'Organic chemistry and qualitative analysis guide for practical exams.', 16000.00, 55),
+
+-- Biology (Category 6)
+(6, 'Biology for Secondary Schools Book 1', 'TIE', 'Cell structure, classification of living things, and health.', 12500.00, 60),
+(6, 'Biology for Secondary Schools Book 2', 'TIE', 'Human anatomy, nutrition, and gaseous exchange systems.', 13500.00, 55),
+(6, 'Biology for Secondary Schools Book 3', 'TIE', 'Ecology, coordination, and reproduction systems.', 14500.00, 50),
+(6, 'Biology for Secondary Schools Book 4', 'TIE', 'Genetics, evolution, and practical biological setup methods.', 15500.00, 70),
+
+-- Civics (Category 7)
+(7, 'Civics for Secondary Schools Book 1', 'TIE', 'Our nation, human rights, and citizen responsibilities.', 9500.00, 50),
+(7, 'Civics for Secondary Schools Book 2', 'TIE', 'Government promotion of democratic ideals and gender issues.', 10500.00, 45),
+(7, 'Civics for Secondary Schools Book 3', 'TIE', 'Economic development, poverty eradication, and life skills.', 11500.00, 40),
+(7, 'Civics for Secondary Schools Book 4', 'TIE', 'Globalization, international cooperation, and local governance.', 12500.00, 60),
+
+-- Physics (Category 8)
+(8, 'Physics for Secondary Schools Book 1', 'TIE', 'Introduction to matter, density, forces, and pressure.', 14000.00, 45),
+(8, 'Physics for Secondary Schools Book 2', 'TIE', 'Magnetism, static electricity, light reflection, and current.', 14500.00, 40),
+(8, 'Physics for Secondary Schools Book 3', 'TIE', 'Linear motion, thermal expansion, and optical instruments.', 15500.00, 35),
+(8, 'Physics for Secondary Schools Book 4', 'TIE', 'Waves, electronics, radioactivity, and astrophysics.', 16500.00, 50),
+
+-- History (Category 9)
+(9, 'History for Secondary Schools Book 1', 'TIE', 'Sources of history, evolution of man, and early social development.', 11000.00, 50),
+(9, 'History for Secondary Schools Book 2', 'TIE', 'Pre-colonial African societies and interactions.', 12000.00, 45),
+(9, 'History for Secondary Schools Book 3', 'TIE', 'Colonial rule, administrative systems, and economic impacts.', 13000.00, 40),
+(9, 'History for Secondary Schools Book 4', 'TIE', 'Nationalist struggles, independence, and post-colonial challenges.', 14000.00, 60);
