@@ -50,6 +50,46 @@
     <footer>
         <p>&copy; 2026 O-Level Books Online System. Developer: Nasri Jabiri</p>
     </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const searchForm = document.querySelector(".search-form");
+    const bookGrid = document.querySelector(".book-grid");
 
+    // Intercept form submission to process dynamically
+    searchForm.addEventListener("submit", function(e) {
+        e.preventDefault(); // Stop the page from reloading
+        const searchInput = this.querySelector("input").value.trim();
+        
+        // Quietly query our background worker script
+        fetch('search_worker.php?query=' + encodeURIComponent(searchInput))
+            .then(response => response.json())
+            .then(books => {
+                bookGrid.innerHTML = ""; // Clear out existing dummy template books
+                
+                if (books.length === 0) {
+                    bookGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: #6b7280; padding: 2rem;">No O-Level textbooks found matching your search term.</p>`;
+                    return;
+                }
+                
+                // Construct real matching textbook item templates onto our dashboard grid
+                books.forEach(book => {
+                    const card = document.createElement("div");
+                    card.className = "book-card";
+                    card.innerHTML = `
+                        <div class="book-info">
+                            <h3>${book.title}</h3>
+                            <p class="author">By: ${book.author}</p>
+                            <p class="category">Subject: ${book.category_name}</p>
+                            <p class="price">TZS ${parseFloat(book.price).toLocaleString()}</p>
+                            <a href="book-details.html?id=${book.book_id}" class="btn">View Details</a>
+                        </div>
+                    `;
+                    bookGrid.appendChild(card);
+                });
+            })
+            .catch(err => console.error("Error retrieving search dataset entries:", err));
+    });
+});
+</script>
 </body>
 </html>
