@@ -27,28 +27,32 @@
             <!-- Objective (e): Add New Book Form Workspace -->
             <div class="admin-card" style="background: #ffffff; padding: 2rem; border: 1px solid #e5e7eb; border-radius: 8px;">
                 <h3 style="color: #1e3a8a; margin-bottom: 1.5rem; border-bottom: 2px solid #f3f4f6; padding-bottom: 0.5rem;">Add New Textbook</h3>
-                <form action="#" method="POST">
+                <form id="addBookForm">
                     <div style="margin-bottom: 1rem;">
                         <label style="display: block; font-weight: 600; margin-bottom: 0.3rem;">Book Title:</label>
-                        <input type="text" placeholder="e.g., Secondary Physics Book 1" required style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
-                    </div>
+                        <input type="text" name="title" placeholder="e.g., Secondary Physics Book 1" required style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
                     <div style="margin-bottom: 1rem;">
                         <label style="display: block; font-weight: 600; margin-bottom: 0.3rem;">Subject Category:</label>
-                        <select required style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
+                        <select name="category_id" required style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
                             <option value="">-- Select Subject --</option>
                             <option value="1">Mathematics</option>
+                            <option value="2">Kiswahili</option>
+                            <option value="3">English Language</option>
+                            <option value="4">Geography</option>
                             <option value="5">Chemistry</option>
                             <option value="6">Biology</option>
+                            <option value="7">Civics</option>
                             <option value="8">Physics</option>
+                            <option value="9">History</option>
                         </select>
                     </div>
                     <div style="margin-bottom: 1rem;">
                         <label style="display: block; font-weight: 600; margin-bottom: 0.3rem;">Price (TZS):</label>
-                        <input type="number" placeholder="15000" required style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
+                        <input type="number" name="price" placeholder="15000" required style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
                     </div>
                     <div style="margin-bottom: 1.5rem;">
                         <label style="display: block; font-weight: 600; margin-bottom: 0.3rem;">Stock Quantity:</label>
-                        <input type="number" placeholder="50" required style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
+                        <input type="number" name="stock_quantity" placeholder="50" required style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
                     </div>
                     <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer; background-color: #10b981;">Save Textbook Entry</button>
                 </form>
@@ -92,6 +96,22 @@
     <footer>
         <p>&copy; 2026 O-Level Books Online System. Developer: Nasri Jabiri</p>
     </footer>
+<script>
+document.getElementById('addBookForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    let formData = new FormData(this);
 
+    fetch('admin_worker.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+        alert(data.message);
+        if(data.status === 'success') document.getElementById('addBookForm').reset();
+    })
+    .catch(err => console.error('Error:', err));
+});
+</script>
 </body>
 </html>
