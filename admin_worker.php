@@ -1,5 +1,6 @@
 <?php
 // Online O-Level Book Purchasing System - Admin Processing Worker API
+//Developer: Nasri Jabiri : Registration Number: 14325011/T.24
 
 header('Content-Type: application/json');
 require_once 'db_connect.php';
