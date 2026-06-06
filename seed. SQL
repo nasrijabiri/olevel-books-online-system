@@ -1,4 +1,5 @@
 -- This script populates the database with Tanzanian O-Level curriculum subjects and textbooks (Form 1 - Form 4)
+-- Developer: Nasri Jabiri : Registration Number - 14325011/T.24
 USE olevel_books_db;
 INSERT INTO categories (category_id, category_name) VALUES
 (1, 'Mathematics'),
