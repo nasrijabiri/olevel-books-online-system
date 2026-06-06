@@ -1,4 +1,4 @@
-- Online O-Level Book Purchasing System Database Script
+-- Online O-Level Book Purchasing System Database Script
 -- Developer: Nasri Jabiri : Registration Number: 14325011/T.24
 
 CREATE DATABASE IF NOT EXISTS olevel_books_db;
