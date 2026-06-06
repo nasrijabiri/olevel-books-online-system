@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - O-Level Books Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">O-Level Books: Admin Panel</div>
+        <nav>
+            <a href="index.html">View Storefront</a>
+            <a href="admin-dashboard.html">Dashboard Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="margin-top: 1.5rem;">System Administration Dashboard</h2>
+        <p style="color: #6b7280; margin-bottom: 2rem;">Manage your textbook catalog entries and process pending customer orders.</p>
+
+        <div class="admin-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+            
+            <!-- Objective (e): Add New Book Form Workspace -->
+            <div class="admin-card" style="background: #ffffff; padding: 2rem; border: 1px solid #e5e7eb; border-radius: 8px;">
+                <h3 style="color: #1e3a8a; margin-bottom: 1.5rem; border-bottom: 2px solid #f3f4f6; padding-bottom: 0.5rem;">Add New Textbook</h3>
+                <form action="#" method="POST">
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 0.3rem;">Book Title:</label>
+                        <input type="text" placeholder="e.g., Secondary Physics Book 1" required style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 0.3rem;">Subject Category:</label>
+                        <select required style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
+                            <option value="">-- Select Subject --</option>
+                            <option value="1">Mathematics</option>
+                            <option value="5">Chemistry</option>
+                            <option value="6">Biology</option>
+                            <option value="8">Physics</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 0.3rem;">Price (TZS):</label>
+                        <input type="number" placeholder="15000" required style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 0.3rem;">Stock Quantity:</label>
+                        <input type="number" placeholder="50" required style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer; background-color: #10b981;">Save Textbook Entry</button>
+                </form>
+            </div>
+
+            <!-- Objective (f): Manage Customer Orders Workspace -->
+            <div class="admin-card" style="background: #ffffff; padding: 2rem; border: 1px solid #e5e7eb; border-radius: 8px;">
+                <h3 style="color: #1e3a8a; margin-bottom: 1.5rem; border-bottom: 2px solid #f3f4f6; padding-bottom: 0.5rem;">Recent Incoming Orders</h3>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem;">
+                        <thead>
+                            <tr style="background-color: #f3f4f6; color: #374151;">
+                                <th style="padding: 0.7rem; border-bottom: 2px solid #e5e7eb;">Order ID</th>
+                                <th style="padding: 0.7rem; border-bottom: 2px solid #e5e7eb;">Items</th>
+                                <th style="padding: 0.7rem; border-bottom: 2px solid #e5e7eb;">Total</th>
+                                <th style="padding: 0.7rem; border-bottom: 2px solid #e5e7eb;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #f3f4f6;">
+                                <td style="padding: 0.7rem; font-weight: 600;">#10024</td>
+                                <td style="padding: 0.7rem;">Biology Book 2 (x1)</td>
+                                <td style="padding: 0.7rem; font-weight: 600; color: #1e3a8a;">TZS 13,500</td>
+                                <td style="padding: 0.7rem;"><span style="color: #0d9488; font-weight: bold; cursor: pointer;">Complete</span></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #f3f4f6;">
+                                <td style="padding: 0.7rem; font-weight: 600;">#10025</td>
+                                <td style="padding: 0.7rem;">Mathematics Book 4 (x2)</td>
+                                <td style="padding: 0.7rem; font-weight: 600; color: #1e3a8a;">TZS 30,000</td>
+                                <td style="padding: 0.7rem;"><span style="color: #dc2626; font-weight: bold; cursor: pointer;">Cancel</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 O-Level Books Online System. Developer: Nasri Jabiri</p>
+    </footer>
+
+</body>
+</html>
