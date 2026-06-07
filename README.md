@@ -12,7 +12,10 @@ a) To allow students to search for books by subject or title
 b) To allow students to view detailed information about books. 
 c) To allow students to place book orders online.
 d) To enable administrators to add, update, and remove books.
-e) To enable administrators to view and manage customer orders.                                 
+e) To enable administrators to view and manage customer orders.   
+
+
+                              
 # Scope: 
 System will;
 a) Manage books and categories. 
