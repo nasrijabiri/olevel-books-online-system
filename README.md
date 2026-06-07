@@ -38,5 +38,5 @@ After completion the project is expected to provide;
 - XAMPP                                                                                                                      
 # Conclusion  
 The Online O-Level Book Purchasing System will provide a convenient and efficient way for students to obtain textbooks. By moving the purchasing process online, the system will save time, reduce costs associated with travel, and improve access to educational materials for O-Level students.
-# Developer:Nasri Jabiri 
+# Developer : Nasri Jabiri 
 # Registration Number - 14325011/T.24
