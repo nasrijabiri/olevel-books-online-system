@@ -7,7 +7,12 @@ An increasing number of students are using the internet to access educational re
 O-Level students often face challenges in obtaining the textbooks they need. Traditional purchasing methods require students to travel to bookstores, which increases costs and wastes time. In some cases, students may not find the required books after traveling. There is a need for a convenient online platform that enables students to find and purchase O-Level books efficiently.
 # Main Objective
 To develop an online system that enables students to purchase O-Level books through the internet.
-# Specific Objectives                                                                                                                   a) To allow students to search for books by subject or title                                                                            b) To allow students to view detailed information about books.                                                                          c) To allow students to place book orders online.                                                                                       e) To enable administrators to add, update, and remove books.                                                                           f) To enable administrators to view and manage customer orders.                                  
+# Specific Objectives
+a) To allow students to search for books by subject or title
+b) To allow students to view detailed information about books. 
+c) To allow students to place book orders online. 
+e) To enable administrators to add, update, and remove books. 
+f) To enable administrators to view and manage customer orders.                                  
 # Scope: 
 System will;
 a) Manage books and categories. 
@@ -25,9 +30,7 @@ c) Better management of book inventory.
 d) Improved customer experience when purchasing books.     
 # Technologies used are  
  a) HTML   
- b) CSS   
- c) JavaScript 
- d) PHP   
+ b) CSS                                                                                                                                  c) JavaScript                                                                                                                           d) PHP   
  e) MySQL 
  f) XAMPP                                                                         
 # Conclusion  
