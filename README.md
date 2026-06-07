@@ -9,7 +9,7 @@ O-Level students often face challenges in obtaining the textbooks they need. Tra
 To develop an online system that enables students to purchase O-Level books through the internet.
 # Specific Objectives
 a) To allow students to search for books by subject or title  
-b) To allow students to view detailed information about books. 
+b) To allow students to view detailed information about books.                                                                          c) To allow students to place book orders online.
 c) To allow students to place book orders online.
 d) To enable administrators to add, update, and remove books.
 e) To enable administrators to view and manage customer orders.   
