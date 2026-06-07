@@ -10,32 +10,28 @@ To develop an online system that enables students to purchase O-Level books thro
 # Specific Objectives
 - To allow students to search for books by subject or title  
 - To allow students to view detailed information about books.                                                                          - To allow students to place book orders online.
-- To allow students to place book orders online.
--  To enable administrators to add, update, and remove books.
--  To enable administrators to view and manage customer orders.   
-
-
-                              
+- To enable administrators to add, update, and remove books.
+- To enable administrators to view and manage customer orders.                               
 # Scope: 
 System will;
-a) Manage books and categories. 
-b) Manage customers and their accounts.  
-c) Process and store book orders. 
-d) Provide search functionality for users.
+- Manage books and categories. 
+- Manage customers and their accounts.  
+- Process and store book orders. 
+- Provide search functionality for users.
 The System will not;
-a) Handle physical delivery logistics. 
-b) Support international payment gateways.
+- Handle physical delivery logistics. 
+- Support international payment gateways.
 # Expected Outcome 
 After completion the project is expected to provide; 
-a) Easy access to O-Level textbooks.     
-b) Reduced time spent searching for books.
-c) Better management of book inventory. 
-d) Improved customer experience when purchasing books.     
+- Easy access to O-Level textbooks.     
+- Reduced time spent searching for books.
+- Better management of book inventory. 
+- Improved customer experience when purchasing books.     
 # Technologies used are  
- a) HTML   
- b) CSS                                                                                                                                  c) JavaScript                                                                                                                           d) PHP   
- e) MySQL 
- f) XAMPP                                                                         
+- HTML   
+- CSS                                                                                                                                  - JavaScript                                                                                                                           - PHP   
+- MySQL 
+- XAMPP                                                                         
 # Conclusion  
 The Online O-Level Book Purchasing System will provide a convenient and efficient way for students to obtain textbooks. By moving the purchasing process online, the system will save time, reduce costs associated with travel, and improve access to educational materials for O-Level students.
 # Developer:Nasri Jabiri 
